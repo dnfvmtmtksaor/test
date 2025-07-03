@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬롯머신 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎰 슬롯머신 게임</h1>
+        
+        <div class="game-info">
+            <div class="balance">
+                <span>보유 코인: </span>
+                <span id="balance">1000</span>
+            </div>
+            <div class="bet">
+                <span>베팅 금액: </span>
+                <span id="bet-amount">50</span>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="slot-reel">
+                <div class="slot-symbol" id="reel1">🍒</div>
+            </div>
+            <div class="slot-reel">
+                <div class="slot-symbol" id="reel2">🍒</div>
+            </div>
+            <div class="slot-reel">
+                <div class="slot-symbol" id="reel3">🍒</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="bet-controls">
+                <button id="decrease-bet">-</button>
+                <span>베팅 금액</span>
+                <button id="increase-bet">+</button>
+            </div>
+            <button id="spin-btn" class="spin-button">돌리기!</button>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <div class="paytable">
+            <h3>배당표</h3>
+            <div class="payout-row">
+                <span>🍒🍒🍒</span>
+                <span>10배</span>
+            </div>
+            <div class="payout-row">
+                <span>🍋🍋🍋</span>
+                <span>15배</span>
+            </div>
+            <div class="payout-row">
+                <span>🍊🍊🍊</span>
+                <span>20배</span>
+            </div>
+            <div class="payout-row">
+                <span>🍇🍇🍇</span>
+                <span>25배</span>
+            </div>
+            <div class="payout-row">
+                <span>💎💎💎</span>
+                <span>50배</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
